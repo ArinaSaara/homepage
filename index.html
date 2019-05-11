@@ -4,6 +4,46 @@
     <meta charset="UTF-8" />
     <title>Résumé</title>
     <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+      <style>
+          [data-tag] > *:first-child:after {
+              font-size: 0.6em;
+              line-height: 1rem;
+              letter-spacing: 0.5px;
+              text-transform: uppercase;
+              display: inline-block;
+              padding: 0em 0.75em;
+              border-radius: 15px;
+              height: 1rem;
+              margin-left: 0.5em;
+              margin-top: -1px;
+              vertical-align: middle;
+              box-shadow: inset 0 0 0 1px;
+              opacity: 0.5;
+              transition: opacity 0.2s linear;
+          }
+          [data-tag]:hover > *:first-child:after {
+              color: #ffffff;
+              opacity: 1;
+              box-shadow: none;
+          }
+          [data-tag="work"] > *:first-child:after { content: "work"; }
+          [data-tag="TV"] > *:first-child:after { content: "TV"; }
+          [data-tag="book"] > *:first-child:after { content: "book"; }
+          [data-tag="happy time"] > *:first-child:after { content: "happy time"; }
+          [data-tag="work"]:hover > *:first-child:after { background: blue; }
+          [data-tag="TV"]:hover > *:first-child:after { background: midnightblue; }
+          [data-tag="book"]:hover > *:first-child:after { background: deepskyblue; }
+          [data-tag="happy time"]:hover > *:first-child:after { background: fuchsia; }
+          /* Highlighted list item */
+          ul:not(.timeline) > li.highlighted,
+          ul:not(.timeline) > li.bordered {
+              margin: 0.25em 0 0.25em -1.75em;
+              padding: 0.25em 0.5em 0.25em 1.75em;
+          }
+          ul:not(.timeline) > li.highlighted > div {
+              margin-bottom: 0.25em;
+          }
+      </style>
   </head>
   <body>
   <main>
@@ -13,7 +53,7 @@
                   <div class="row">
                       <div class="three wide center aligned column">
                           <div class="avatar-wrapper">
-                              <img class ="avatar" src="Donald_Trump.jpg" alt="My profile picture" >
+                              <img class ="avatar" style="height: 200px; width: 150px; border-radius:50%;" src="Donald_Trump.jpg" alt="My profile picture" >
                           </div>
                       </div>
                       <div class="thirteen wide column">
@@ -52,7 +92,7 @@
                               </div>
                               <div class="sixteen wide column">
                                   <h2>Résumé</h2>
-                                  <p>― I'm the most successful person ever to run for the presidency, by far. Nobody's ever been more successful than me. I'm the most successful person ever to run. Ross Perot isn't successful like me. Romney ― I have a Gucci store that's worth more than Romney. Sorry losers and haters, but my IQ is one of the highest ― and you all know it! <em>Please don't feel so stupid or insecure, it's not your fault.</em></p>
+                                  <p><em>&mdash;― I'm the most successful person ever to run for the presidency, by far. Nobody's ever been more successful than me. I'm the most successful person ever to run. Ross Perot isn't successful like me. Romney ― I have a Gucci store that's worth more than Romney. Sorry losers and haters, but my IQ is one of the highest ― and you all know it! Please don't feel so stupid or insecure, it's not your fault.</em></p>
                               </div>
                           </div>
                       </div>
@@ -66,60 +106,55 @@
                       <div class="ten wide column">
                           <h3>EXPERIENCE</h3>
                           <ul class="timeline">
-                              <li>
-                                  <p><small>2017</small></p>
-                                  <p>Became 45th president of the United States</p>
+
+                              <li class="highlighted">
+                                  <p><small><em>&#x1f389; 2015 - 2017 &#x1f389;</em></small></p>
+                                  <p><strong>2017</strong> - Became 45th president of the United States&#x1f389;</p>
+                                  <p><strong>2016</strong> - Won election race with 77 votes more than Clinton <em>yippe-kee-yay!</em>&#x1f389;</p>
+                                  <p><strong>2015</strong> - Became the most important Republican nominating for presidential election run</p>
                               </li>
                               <li>
-                                  <p><small>2016</small></p>
-                                  <p>Won election race with 77 votes more than Clinton, yippe-kee-yay!</p>
-                              </li>
-                              <li>
-                                  <p><small>2015</small></p>
-                                  <p>Became the most important Republican nominating for presidential election run</p>
-                              </li>
-                              <li>
-                                  <p><small>2009</small></p>
+                                  <p><small><em>2009</em></small></p>
                                   <p>Changed my mind and became Republican again</p>
                               </li>
                               <li>
-                                  <p><small>2005</small></p>
-                                  <p>Started Trump University with Michael Sexton and Jonathan Spitalny: no grades, certificates and other bureaucracy, but program offered courses in real estate, asset management entrepreneurship, and wealth creation. 98% students gave positive reviews while studying, however some of these ungrateful gringos filed lawsuits against Trump University after the course. I had to pay $25 million to settle that...</p>
+                                  <p><small><em>2005</em></small></p>
+                                  <p>Started <strong><a href="https://en.wikipedia.org/wiki/Trump_University" rel="external">Trump University</a></strong> &#x1f393; with Michael Sexton and Jonathan Spitalny: no grades, certificates and other bureaucracy, but program offered courses in real estate, asset management entrepreneurship, and wealth creation. <strong>98%</strong> students gave positive reviews while studying, however some of these ungrateful gringos filed lawsuits against Trump University after the course. I had to pay <strong>$25</strong> million to settle that...</p>
                               </li>
                               <li>
-                                  <p><small>2002</small></p>
-                                  <p>Acquired the former Hotel Delmonico, which was renovated and reopened in 2004 as the Trump Park Avenue. I sure do like my surname!</p>
+                                  <p><small><em>2002</em></small></p>
+                                  <p>Acquired the former <strong><a href="https://en.wikipedia.org/wiki/Trump_Park_Avenue">Hotel Delmonico</a></strong>, which was renovated and reopened in 2004 as the Trump Park Avenue. I sure do like my surname!</p>
                               </li>
                               <li>
-                                  <p><small>2001</small></p>
-                                  <p>Completed Trump World Tower and joined the Democratic Party</p>
+                                  <p><small><em>2001</em></small></p>
+                                  <p>Completed <strong><a href = "https://en.wikipedia.org/wiki/Trump_World_Tower">Trump World Tower</a></strong> and joined the Democratic Party</p>
                               </li>
                               <li>
-                                  <p><small>1999</small></p>
+                                  <p><small><em>1999</em></small></p>
                                   <p>Started buying golf courses. They are very cheap, I have 18 of them now in USA and abroad! Also switched to the Reform Party that year</p>
                               </li>
                               <li>
-                                  <p><small>1997</small></p>
-                                  <p>Began a multi-building development along the Hudson River, which was named Trump Place. Me and the other investors sold our shares for $1.8 billion and that was then the biggest residential sale in the history of New York City</p>
+                                  <p><small><em>1997</em></small></p>
+                                  <p>Began a multi-building development along the Hudson River, which was named Trump Place. Me and the other investors sold our shares for $1.8 billion &#x1f4b0; and that was then the biggest residential sale in the history of New York City</p>
                               </li>
                               <li>
-                                  <p><small>1996</small></p>
+                                  <p><small><em>1996</em></small></p>
                                   <p>Acquired the Bank of Manhattan Trust Building, which was a vacant seventy-one story skyscraper on Wall Street. After an extensive renovation, the high-rise was renamed the Trump Building</p>
                               </li>
                               <li>
-                                  <p><small>1994</small></p>
+                                  <p><small><em>1994</em></small></p>
                                   <p>Refurbished the Gulf and Western Building on Columbus Circle, turned it into a 44-story luxury property known as Trump International Hotel and Tower</p>
                               </li>
                               <li>
-                                  <p><small>1989 ― 1992</small></p>
-                                  <p>Ran a second hand airline called Trump Shuttle. What a waste of money, I had to sell it, now it is American Airlines Shuttle, btw</p>
+                                  <p><small><em>1989 ― 1992</em></small></p>
+                                  <p>Ran a second hand airline called <strong><a href = "https://en.wikipedia.org/wiki/Trump_Shuttle">Trump Shuttle</a></strong>. What a waste of money, I had to sell it, now it is American Airlines Shuttle, btw</p>
                               </li>
                               <li>
-                                  <p><small>1989, 1990</small></p>
+                                  <p><small><em>1989, 1990</em></small></p>
                                   <p>Learned about Tour de France and decided to hold my very own Tour de Trump. Is America not great enough for that cycling competition?</p>
                               </li>
                               <li>
-                                  <p><small>1988</small></p>
+                                  <p><small><em>1988</em></small></p>
                                   <p>Acquired the Plaza Hotel in Manhattan for $407 million, invested $50 million to restore the building and boosted it from three-star to four-star hotel (I called it "the Mona Lisa" and sold it for a lot of cash in 1995)</p>
                               </li>
                               <li>
@@ -128,7 +163,7 @@
                               </li>
                               <li>
                                   <p><small>1985</small></p>
-                                  <p>I bought the Mar-a-Lago estate in Palm Beach and turned it into a private club.You can join if you pay $200K initiation fee (and there is another annual fee for members, it is very expensive to be rich). That year I also opened a casino called Trump Castle. My wife Ivana became a manager, because she is another Trump!</p>
+                                  <p>I bought the <strong><a href = "https://en.wikipedia.org/wiki/Mar-a-Lago">Mar-a-Lago</a></strong> estate in Palm Beach and turned it into a private club.You can join if you pay $200K initiation fee (and there is another annual fee for members, it is very expensive to be rich). That year I also opened a casino called Trump Castle. My wife Ivana became a manager, because she is another Trump!</p>
                               </li>
                               <li>
                                   <p><small>1983</small></p>
@@ -155,7 +190,7 @@
                           <ul class="timeline">
                               <li>
                                   <p><small>2006</small></p>
-                                  <p>Melania gained United States citizenship and gave birth to our son, Barron</p>
+                                  <p>Melania gained United States citizenship and gave birth to our son, <strong><a href="https://en.wikipedia.org/wiki/Family_of_Donald_Trump">Barron</a></strong></p>
                               </li>
                               <li>
                                   <p><small>2005</small></p>
@@ -163,31 +198,31 @@
                               </li>
                               <li>
                                   <p><small>1998</small></p>
-                                  <p>Met my future third wife, Melania Knauss</p>
+                                  <p>Met my future third wife,<strong><a href="https://en.wikipedia.org/wiki/Family_of_Donald_Trump">Melania Knauss</a></strong> &#x1f495;</p>
                               </li>
                               <li>
                                   <p><small>1999</small></p>
                                   <p>Divorced Marla ¯_(ツ)_/¯</p>
                               </li>
-                              <li>
+                              <li data-tag="happy time">
                                   <p><small>1993</small></p>
-                                  <p>Married Marla and had a daughter, we named her Tiffany, because I like Tiffany & Company jewellery as well</p>
+                                  <p>Married Marla and had a daughter, we named her <strong><a href="https://en.wikipedia.org/wiki/Family_of_Donald_Trump">Tiffany</a></strong> &#x1f381;, because I like <strong><a href="https://www.tiffany.com/ ">Tiffany & Company</a></strong> jewellery as well</p>
                               </li>
                               <li>
                                   <p><small>1992</small></p>
                                   <p>Started affair with Marla Maples, so I had to divorce. God knows I love nice women, I love them all!</p>
                               </li>
-                              <li>
+                              <li data-tag="happy time">
                                   <p><small>1984</small></p>
-                                  <p>Birth of Eric Trump</p>
+                                  <p>Birth of Eric Trump &#x1f48d;</p>
                               </li>
                               <li>
                                   <p><small>1982</small></p>
-                                  <p>Birth of Ivanka Trump</p>
+                                  <p>Birth of <strong><a href="https://en.wikipedia.org/wiki/Family_of_Donald_Trump">Ivanka Trump</a></strong></p>
                               </li>
-                              <li>
-                                  <p><small>1977</small></p>
-                                  <p>My first son is born. I called him Donald, of course!</p>
+                              <li data-tag="happy time">
+                                  <p><small><em>1977</em></small></p>
+                                  <p>My first son is born. I called him <strong><a href="https://en.wikipedia.org/wiki/Family_of_Donald_Trump">Donald</a></strong>, of course!</p>
                               </li>
                               <li>
                                   <p><small>1977</small></p>
@@ -196,73 +231,73 @@
                           </ul>
                           <h3 class="timeline">MEDIA CAREER</h3>
                           <ul>
-                              <li>
-                                  <p><small>2019</small></p>
-                                  <p>Was awarded Worst Actor and Worst Screen Combo at Golden Raspberry Awards for parts in "Death of a Nation" and "Fahrenheit 11/9"</p>
+                              <li data-tag="TV">
+                                  <p><small><em>2019</em></small></p>
+                                  <p>Was awarded Worst Actor and Worst Screen Combo at Golden Raspberry Awards for parts in <strong><a href="https://www.imdb.com/title/tt8564902/news">"Death of a Nation" and "Fahrenheit 11/9"</a></strong> &#x1f3ac;</p>
                               </li>
                               <li>
                                   <p><small>2015</small></p>
-                                  <p>Published a book <strong>"Crippled America: How to Make America Great Again"</strong></p>
+                                  <p>Published a book <strong><a href = "https://en.wikipedia.org/wiki/Crippled_America">"Crippled America: How to Make America Great Again"</a></strong></p>
                               </li>
                               <li>
                                   <p><small>2011</small></p>
-                                  <p>Published a book <strong>"Time to Get Tough: Making America #1 Again"</strong> in coauthorship with Wynton Hall, Peter Schweizer and Meredith McIver</p>
+                                  <p>Published a book <strong><a href="https://en.wikipedia.org/wiki/Time_to_Get_Tough">"Time to Get Tough: Making America #1 Again"</a></strong> in coauthorship with Wynton Hall, Peter Schweizer and Meredith McIver</p>
                               </li>
                               <li>
                                   <p><small>2011</small></p>
-                                  <p>Published a book <strong>"Midas Touch: Why Some Entrepreneurs Get Rich – And Why Most Don't"</strong> in coauthorship with Robert Kiyosaki</p>
+                                  <p>Published a book <strong><a href="https://www.amazon.com/Midas-Touch-Some-Entrepreneurs-Rich-ebook/dp/B01BFJBK1M">"Midas Touch: Why Some Entrepreneurs Get Rich – And Why Most Don't"</a></strong> in coauthorship with Robert Kiyosaki</p>
                               </li>
                               <li>
                                   <p><small>2011</small></p>
-                                  <p>Published a book <strong>"Trump Tower"</strong> in coauthorship with Jeffrey Robinson</p>
+                                  <p>Published a book <strong><a href ="https://en.wikipedia.org/wiki/Trump_Tower_(novel)">"Trump Tower"</a></strong> in coauthorship with Jeffrey Robinson</p>
                               </li>
                               <li>
                                   <p><small>2009</small></p>
-                                  <p>Published a book <strong>"Think Like a Champion: An Informal Education in Business and Life"</strong> in coauthorship with Meredith McIver</p>
+                                  <p>Published a book <strong><a href="">Think Like a Champion: An Informal Education in Business and Life"</a></strong> in coauthorship with Meredith McIver</p>
                               </li>
                               <li>
                                   <p><small>2008</small></p>
-                                  <p>Published a book <strong>"Never Give Up: How I Turned My Biggest Challenges into Success"</strong> in coauthorship with Meredith McIver</p>
+                                  <p>Published a book <strong><a href="">"Never Give Up: How I Turned My Biggest Challenges into Success"</a></strong> in coauthorship with Meredith McIver</p>
                               </li>
                               <li>
                                   <p><small>2007</small></p>
-                                  <p>Published a book <strong>"Think Big and Kick Ass"</strong> in coauthorship with Bill Zanker</p>
+                                  <p>Published a book <strong><a href="">"Think Big and Kick Ass"</a></strong> in coauthorship with Bill Zanker</p>
                               </li>
                               <li>
                                   <p><small>2007</small></p>
-                                  <p>Received a star on the Hollywood Walk of Fame for being producer of Miss Universe pageant</p>
+                                  <p>Received a star on the <strong>Hollywood Walk of Fame</strong> for being producer of <em>Miss Universe pageant</em></p>
+                              </li>
+                              <li data-tag="book">
+                                  <p><small><em>2006</em></small></p>
+                                  <p>Published a book <strong><a href = "https://en.wikipedia.org/wiki/Why_We_Want_You_to_Be_Rich">"Why We Want You to Be Rich"</a></strong> in coauthorship with Meredith McIver and Robert Kiyosaki</p>
                               </li>
                               <li>
-                                  <p><small>2006</small></p>
-                                  <p>Published a book <strong>"Why We Want You to Be Rich"</strong> in coauthorship with Meredith McIver and Robert Kiyosaki</p>
+                                  <p><small><em>2006</em></small></p>
+                                  <p>Published a book <strong><a href ="">"How to Build a Fortune: Your Plan for Success From the World's Most Famous Businessman"</a></strong></p>
                               </li>
                               <li>
-                                  <p><small>2006</small></p>
-                                  <p>Published a book <strong>"How to Build a Fortune: Your Plan for Success From the World's Most Famous Businessman"</strong></p>
+                                  <p><small><em>2006</em></small></p>
+                                  <p>Published a book <strong><a href ="">"The Best Real Estate Advice I Ever Received: 100 Top Experts Share Their Strategies"</a></strong></p>
                               </li>
                               <li>
-                                  <p><small>2006</small></p>
-                                  <p>Published a book <strong>"The Best Real Estate Advice I Ever Received: 100 Top Experts Share Their Strategies"</strong></p>
+                                  <p><small><em>2006</em></small></p>
+                                  <p>Published a book <strong><a href ="">Trump 101: The Way to Success"</a></strong> in coauthorship with Meredith McIver</p>
                               </li>
                               <li>
-                                  <p><small>2006</small></p>
-                                  <p>Published a book <strong>"Trump 101: The Way to Success"</strong> in coauthorship with Meredith McIver</p>
+                                  <p><small><em>2005</em></small></p>
+                                  <p>Published a book <strong><a href ="">"The Best Golf Advice I Ever Received"</a></strong></p>
                               </li>
-                              <li>
-                                  <p><small>2005</small></p>
-                                  <p>Published a book <strong>"The Best Golf Advice I Ever Received"</strong></p>
+                              <li data-tag="TV">
+                                  <p><small><em>2005</em></small></p>
+                                  <p>Performed a song with Megan Mullally at the 57th Primetime Emmy Awards &#x1f3a4;</p>
                               </li>
-                              <li>
-                                  <p><small>2005</small></p>
-                                  <p>Performed a song with Megan Mullally at the 57th Primetime Emmy Awards</p>
-                              </li>
-                              <li>
-                                  <p><small>2004 ― 2008</small></p>
-                                  <p>Ran short-form talk radio program <strong>"Trumped!"</strong> (one to two minutes on weekdays)</p>
+                              <li data-tag="TV">
+                                  <p><small><em>2004 ― 2008</em></small></p>
+                                  <p>Ran short-form talk radio program <strong>"Trumped!"</strong> &#x1f3a7; (one to two minutes on weekdays)</p>
                               </li>
                               <li>
                                   <p><small>2004</small></p>
-                                  <p>Published a book <strong>"Trump: How to Get Rich"</strong> in coauthorship with Meredith McIver</p>
+                                  <p>Published a book <strong><a href ="">"Trump: How to Get Rich"</a></strong> in coauthorship with Meredith McIver</p>
                               </li>
                               <li>
                                   <p><small>2004</small></p>
@@ -270,19 +305,19 @@
                               </li>
                               <li>
                                   <p><small>2004</small></p>
-                                  <p>Published a book <strong>"Think Like a Billionaire: Everything You Need to Know About Success, Real Estate, and Life"</strong>" in coauthorship with Meredith McIver</p>
+                                  <p>Published a book <strong><a href ="">"Think Like a Billionaire: Everything You Need to Know About Success, Real Estate, and Life"</a></strong>" in coauthorship with Meredith McIver</p>
                               </li>
-                              <li>
-                                  <p><small>2003 ― 2015</small></p>
-                                  <p>Produced NBC reality shows <strong>""The Apprentice"</strong> and <strong>"The Celebrity Apprentice"</strong>"</p>
+                              <li data-tag="TV">
+                                  <p><small><em>2003 ― 2015</em></small></p>
+                                  <p>Produced NBC reality shows <strong>"The Apprentice"</strong> and <strong>"The Celebrity Apprentice"</strong>"</p>
                               </li>
                               <li>
                                   <p><small>2000</small></p>
-                                  <p>Published a book <strong>"Trump: The America We Deserve"</strong>" in coauthorship with Dave Shiflett</p>
+                                  <p>Published a book <strong><a href ="">"Trump: The America We Deserve"</a></strong>" in coauthorship with Dave Shiflett</p>
                               </li>
                               <li>
                                   <p><small>1997</small></p>
-                                  <p>Published a book <strong>"Trump: The Art of the Comeback"</strong> in coauthorship with Kate Bohner</p>
+                                  <p>Published a book <strong><a href ="">"Trump: The Art of the Comeback"</a></strong> in coauthorship with Kate Bohner</p>
                               </li>
                               <li>
                                   <p><small>1991</small></p>
@@ -290,11 +325,11 @@
                               </li>
                               <li>
                                   <p><small>1990</small></p>
-                                  <p>Published a book <strong>"Trump: Surviving at the Top"</strong> in coauthorship with Charles Leerhsen</p>
+                                  <p>Published a book <strong><a href="https://www.amazon.com/Trump-Surviving-Top-Donald-J/dp/0394575970">"Trump: Surviving at the Top"</a></strong> in coauthorship with Charles Leerhsen</p>
                               </li>
                               <li>
                                   <p><small>1987</small></p>
-                                  <p>Published a book <strong>"Trump: The Art of the Deal"</strong> in coauthorship with Tony Shwartz</p>
+                                  <p>Published a book <strong><a href ="">"Trump: The Art of the Deal"</a></strong> in coauthorship with Tony Shwartz</p>
                               </li>
                           </ul>
 
@@ -306,7 +341,7 @@
                               </li>
                               <li>
                                   <p><small>1966</small></p>
-                                  <p>Transferred to the Wharton School of the University of Pennsylvania and graduated in May 1968 with a B.S. in economics</p>
+                                  <p>Transferred to the Wharton School of the University of Pennsylvania and graduated in May 1968 with a B.S. in economics &#x1f393;</p>
                               </li>
                               <li>
                                   <p><small>1959 - 1964</small></p>
@@ -322,7 +357,7 @@
                       <div class="six wide column">
                           <section>
                               <h3>LANGUAGES</h3>
-                              <p class="tags small"><span class="language" lang ="en">&#x1f1fa;&#x1f1f8; ENGLISH</span>
+                              <p class="tags small"><span class="language" lang="en">&#x1f1fa;&#x1f1f8; ENGLISH</span>
                           </section>
                           <section>
                               <h3>SKILLS</h3>
@@ -342,12 +377,14 @@
                           </section>
                           <section>
                               <h3>WANTS</h3>
-                              <p class="tags small">BE HEALTHY GROW A TREE BUILD TRUMP AIRPORT HAVE A TASTE DO A HARLEM SHAKE IN CONGRESS TO GOLF MORE OFTEN WIN ALL THE COURT SUITS</p>
-                          </section>
-                          <!-- Education -->
-                          <section>
-                              <h3>Articles</h3>
-                              <p>None published <sup><em>yet</em></sup></p>
+                              <div class="labels">
+                                  <a class="label" href = "https://www.who.int/behealthy">BE HEALTHY</a>
+                                  <a class="label" href = "https://www.grow-trees.com/">GROW A TREE</a>
+                                  <a class="label" href = "https://en.wikipedia.org/wiki/Airport">BUILD TRUMP AIRPORT</a>
+                                  <a class="label" href = "https://www.ldoceonline.com/dictionary/taste">HAVE A TASTE</a>
+                                  <a class="label" href = "https://www.streetdirectory.com/etoday/clever-strategies-to-help-you-win-golf-more-often-wepolu.html">TO GOLF MORE OFTEN WIN</a>
+                                  <a class="label" href = "http://www.helplinelaw.com/civil-litigation-and-others/SUIT/types-of-suits.html">ALL THE COURT SUITS</a>
+                              </div>
                           </section>
                       </div>
                   </div>
