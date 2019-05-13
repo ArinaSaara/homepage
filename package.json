@@ -1,0 +1,23 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "My very own personal website. Basically this is just a résumé.",
+  "main": "workbox-config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "r": "workbox generateSW workbox-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArinaSaara/homepage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArinaSaara/homepage/issues"
+  },
+  "homepage": "https://github.com/ArinaSaara/homepage#readme",
+  "dependencies": {
+    "workbox-cli": "^4.3.1"
+  }
+}
